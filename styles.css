@@ -7,13 +7,17 @@ body{
 .container{
     display:grid;
     height:100vh;
+    /* Nombres colonnes */
     grid-template-columns:1fr 1fr 1fr 1fr;
+    /* Nombres de lignes */
     grid-template-rows:1.5fr 0.5fr 2fr 4fr 1fr;
+    /* Mise en page */
     grid-template-areas:"header header header header"
     "nav nav nav nav"
     "intro intro intro intro"
     "contenu1 contenu1 contenu2 contenu2"
     "footer footer footer footer";
+    /* Espace entre éléments */
     grid-gap:0.2rem;
     font-family:'Times New Roman', Times, serif;
     font-size:14px;
@@ -50,7 +54,7 @@ body{
     background:#a5d7f1;
     grid-area:footer;
     }
-    
+    /* Version responsive */
     @media screen and (max-width:768px){
       .container{
     grid-template-columns:1fr;
